@@ -56,20 +56,7 @@ const certifications = [
 	{ title: 'Network Fundamentals', issuer: 'Infosys Springboard' },
 ];
 
-const getTechColor = (tech: string) => {
-	switch (tech) {
-		case 'Python': return 'bg-yellow-300 text-yellow-900 border-yellow-400';
-		case 'TensorFlow': return 'bg-orange-300 text-orange-900 border-orange-400';
-		case 'PyTorch': return 'bg-red-300 text-red-900 border-red-400';
-		case 'OpenCV': return 'bg-green-300 text-green-900 border-green-400';
-		case 'Machine Learning': return 'bg-purple-300 text-purple-900 border-purple-400';
-		case 'GANs': return 'bg-pink-300 text-pink-900 border-pink-400';
-		case 'Image Processing': return 'bg-blue-200 text-blue-900 border-blue-400';
-		case 'Image-to-Image Translation': return 'bg-indigo-200 text-indigo-900 border-indigo-400';
-		case 'Deep Learning': return 'bg-cyan-200 text-cyan-900 border-cyan-400';
-		default: return 'bg-brand-soft-blue/50 text-gray-800 border-gray-300';
-	}
-};
+const getTechColor = () => 'bg-blue-100 text-blue-900 border-blue-400';
 
 
 const Resume = () => (
@@ -96,7 +83,7 @@ const Resume = () => (
 										<h4 className="font-medium text-yellow-800 mb-3">{skillGroup.category}</h4>
 										<div className="flex flex-wrap gap-2">
 											{skillGroup.items.map((skill) => (
-												<Badge key={skill} variant="secondary" className={getTechColor(skill)}>
+												<Badge key={skill} variant="secondary" className={getTechColor()}>
 													<span className="text-blue-900">{skill}</span>
 												</Badge>
 											))}
@@ -199,7 +186,7 @@ const Resume = () => (
 												)}
 												<div className="flex flex-wrap gap-2">
 													{project.technologies.map((tech, i) => (
-														<Badge key={`${tech}-${i}`} variant="outline" className={getTechColor(tech)}>
+														<Badge key={`${tech}-${i}`} variant="outline" className={getTechColor()}>
 															<span className="text-blue-900">{tech}</span>
 														</Badge>
 													))}
