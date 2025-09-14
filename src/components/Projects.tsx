@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: 'Non-Invasive Blood Group Detection',
       description: 'An AI-powered application that uses computer vision to detect blood groups without traditional invasive methods. This project combines machine learning algorithms with medical science to create a more comfortable testing experience.',
-      image: 'placeholder.svg',
+      image: '../public/images/blood.png',
       technologies: ['Python', 'TensorFlow', 'OpenCV', 'Machine Learning'],
       links: {
         github: 'https://github.com/varsha-pai/noninvasive-bloodgroup-detection',
@@ -37,13 +37,14 @@ const Projects = () => {
     },
     {
       title: 'SAR Image Colorization using Deep Learning',
+      image: '../public/images/sar.png',
       description: ['Engineered an image-to-image translation system to convert Synthetic Aperture Radar (SAR) data into photorealistic optical images (Black and white Satellite images to RGB Images)', 'Implemented a Pix2pix Generative Adversarial Network (GAN) and enhanced image quality by optimizing the model to minimize L1 and L2 reconstruction losses'],
       technologies: ['Python', 'TensorFlow', 'PyTorch', 'GANs', 'Image Processing', 'Image-to-Image Translation', 'GANs', 'Deep Learning']
     },
     {
       title: 'Light-Sensing Street Lights',
       description: 'Energy-efficient IoT solution for urban street lighting that automatically adjusts brightness based on ambient light conditions and pedestrian presence. This project aims to reduce energy consumption while maintaining safety.',
-      image: 'placeholder.svg',
+      image: '../public/images/light.png  ',
       used: ['Smart City', 'Energy Efficiency'],
       technologies: ['IoT', 'Sensors', 'Energy Efficiency'],
     },
@@ -56,7 +57,7 @@ const Projects = () => {
     {
       title: 'PersonaliTea',
       description: 'PersonaliTea is an AI-powered web app that uncovers personality traits by analyzing text from uploaded files. It uses advanced natural language processing (NLP) to identify personality patterns in communication.',
-      image: 'placeholder.svg',
+      image: '../public/images/personality.png',
       technologies: ['TypeScript', 'Vite', 'NLP-library-compromise', 'Personality Analysis-library-sentiment', 'React', 'Tailwind CSS'],
       links: {
         demo: 'https://personali-tea.vercel.app/',
