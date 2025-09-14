@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { supabase } from '@/lib/supabaseClient';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,12 +12,29 @@ import { useToast } from '@/hooks/use-toast';
 const Contact = () => {
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
+    const form = e.target as HTMLFormElement;
+    const formData = {
+      name: (form.elements.namedItem('name') as HTMLInputElement)?.value,
+      email: (form.elements.namedItem('email') as HTMLInputElement)?.value,
+      subject: (form.elements.namedItem('subject') as HTMLInputElement)?.value,
+      message: (form.elements.namedItem('message') as HTMLInputElement)?.value,
+    };
+    const { error } = await supabase.from('job').insert([formData]);
+    if (error) {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive",
+      });
+    } else {
+      toast({
+        title: "Message Sent",
+        description: "Thanks for reaching out! I'll get back to you soon.",
+      });
+      form.reset();
+    }
   };
 
   return (
