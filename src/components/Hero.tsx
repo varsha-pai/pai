@@ -21,7 +21,7 @@ const Hero = () => {
                 Hello, I'm <span className="text-brown-700">Varsha V Pai</span>
               </h1>
               <p className="text-2xl md:text-3xl text-brown-700 font-montserrat font-medium tracking-wide">
-                Engineering student passionate about <span className="text-blue-700">AI</span>, <span className="text-blue-800">Learning</span>.
+                Engineering student passionate about developing technological solutions that have a meaningful impact on society.
               </p>
             </div>
 
