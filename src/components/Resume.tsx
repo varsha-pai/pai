@@ -25,6 +25,18 @@ const experiences = [
 		skills: ['Stripe', 'React', 'Typescript', 'Supabase'],
 	},
 	{
+		title: 'Full Stack Developer Intern',
+		company: 'URSC (U R Rao Satellite Center)',
+		period: 'Sept 2025 – Oct 2025',
+		description: [
+			'Developed and integrated a custom Django application into a document management system to enable a user-driven permission request workflow.',
+			'Implemented a granular access control policy (’See But Not Enter’) by defining custom permissions to conditionally display content based on user ACLs.',
+			'Created distinct user-facing interfaces for requesting access and administrator-facing interfaces for managing (approving/denying) requests within the platform.',
+			'Configured and deployed the customized application stack using Docker Compose, managing container dependencies, volumes, and environment variables for cross-platform compatibility.'
+		],
+		skills: ['Django', 'Docker Compose', 'Access Control']
+	},
+	{
 		title: 'Design Team Lead',
 		company: 'NODEDOTAI',
 		period: 'June 2023 - Present',
