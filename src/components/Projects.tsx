@@ -51,7 +51,7 @@ const Projects = () => {
     {
       title: 'Cognitive Crime Analysis',
       description: 'Architected a full-stack, AI powered intelligence platform to asynchronously process unstructured crime reports, leveraging Google’s Generative AI to build an interconnected knowledge graph for cross-case analysis, power a reasoning based chatbot, and generate suspect image. The platform also integrates a sophisticated computer vision module, featuring a vision-enabled agent that can interactively analyze crime scene images, answer queries',
-      image: '../public/images/cognitive.jpg',
+      image: '/images/cognitive.jpg',
       technologies: ['Python', 'FastAPI', 'Celery', 'React', 'Neo4j']
     },
     
