@@ -39,7 +39,7 @@ const experiences = [
 	{
 		title: 'Design Team Lead',
 		company: 'NODEDOTAI',
-		period: 'June 2023 - Present',
+		period: 'June 2023 - June 2024',
 		description: 'Leading the design initiatives for AI-based projects, managing a team of designers, and ensuring cohesive visual strategies.',
 		skills: ['Leadership', 'Team Management', 'Canva', 'Project Coordination & Planning', 'Communication'],
 	},
