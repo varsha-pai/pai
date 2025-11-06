@@ -26,12 +26,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <Button className="bg-primary hover:bg-primary/90 text-white">
-                See My Work
-              </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                Contact Me
-              </Button>
+             
             </div>
           </div>
 
